@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Search View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="DetailSearchViewController" customModule="SeniorCitizensHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaE-oz-438">
+                                <rect key="frame" x="20" y="64" width="89" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="dy3-Tm-BhM"/>
+                                    <constraint firstAttribute="width" constant="89" id="q6a-g5-hkX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrowtriangle.backward.circle" catalog="system" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ONi-6t-RcE"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="GYV-NE-UG9">
+                                <rect key="frame" x="30" y="144" width="354" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ZpP-d5-Tsv">
+                                        <rect key="frame" x="0.0" y="0.0" width="118" height="618"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="事業所名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KpI-4S-KQk">
+                                                <rect key="frame" x="0.0" y="0.0" width="69.5" height="61.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="電話番号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPp-Zd-BJt">
+                                                <rect key="frame" x="0.0" y="111.5" width="69.5" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ceh-6A-aTD">
+                                                <rect key="frame" x="0.0" y="222.5" width="31" height="61.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="事業所HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fG7-VO-4nb">
+                                                <rect key="frame" x="0.0" y="334" width="75" height="61.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="法人HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbf-UY-OYk">
+                                                <rect key="frame" x="0.0" y="445.5" width="57.5" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="住所" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yix-Pa-fid">
+                                                <rect key="frame" x="0.0" y="556.5" width="35" height="61.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="bob-Vq-k4B">
+                                        <rect key="frame" x="118" y="0.0" width="118" height="618"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N0T-wo-GRH">
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="61.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05s-uW-Rd3">
+                                                <rect key="frame" x="0.0" y="111.5" width="33" height="61"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" systemColor="tintColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="r0d-ZW-aMV" appends="YES" id="Gm7-4T-gUE"/>
+                                                </connections>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-d3-88u">
+                                                <rect key="frame" x="0.0" y="222.5" width="33" height="61.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dtx-qr-042">
+                                                <rect key="frame" x="0.0" y="334" width="26.5" height="61.5"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1n-RW-iku">
+                                                <rect key="frame" x="0.0" y="445.5" width="26.5" height="61"/>
+                                                <gestureRecognizers/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jc1-gk-jxc">
+                                                <rect key="frame" x="0.0" y="556.5" width="28.5" height="61.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="bottom" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="0Qe-7z-Bgo">
+                                        <rect key="frame" x="236" y="0.0" width="118" height="618"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApM-ZR-rhz" customClass="FunctionSelectionItemButton" customModule="SeniorCitizensHome" customModuleProvider="target">
+                                                <rect key="frame" x="28" y="0.0" width="90" height="61.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="doc.on.doc" catalog="system" title="コピー"/>
+                                                <connections>
+                                                    <action selector="copyOfficeName:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="XMb-Dx-Wfe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkM-VD-uoU" customClass="FunctionSelectionItemButton" customModule="SeniorCitizensHome" customModuleProvider="target">
+                                                <rect key="frame" x="28" y="111.5" width="90" height="61"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="doc.on.doc" catalog="system" title="コピー"/>
+                                                <connections>
+                                                    <action selector="copyTelNumber:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DL6-a2-gGr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fto-n6-AlD" customClass="FunctionSelectionItemButton" customModule="SeniorCitizensHome" customModuleProvider="target">
+                                                <rect key="frame" x="28" y="222.5" width="90" height="61.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="doc.on.doc" catalog="system" title="コピー"/>
+                                                <connections>
+                                                    <action selector="copyFaxNumber:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JxP-AO-gTW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2b-1g-V4e" customClass="FunctionSelectionItemButton" customModule="SeniorCitizensHome" customModuleProvider="target">
+                                                <rect key="frame" x="41.5" y="334" width="76.5" height="61.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" title="WEB"/>
+                                                <connections>
+                                                    <action selector="screenTransitionOfficeURL:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="65K-qO-Psx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6J-Xo-9gp" customClass="FunctionSelectionItemButton" customModule="SeniorCitizensHome" customModuleProvider="target">
+                                                <rect key="frame" x="41.5" y="445.5" width="76.5" height="61"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="magnifyingglass" catalog="system" title="WEB"/>
+                                                <connections>
+                                                    <action selector="screenTransitionCorporateURL:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="1sD-Qa-ZFU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afm-tS-9NT" customClass="FunctionSelectionItemButton" customModule="SeniorCitizensHome" customModuleProvider="target">
+                                                <rect key="frame" x="46" y="556.5" width="72" height="61.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="mappin.and.ellipse" catalog="system" title="Map"/>
+                                                <connections>
+                                                    <action selector="searchMapFromAdress:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="G62-Ej-SEm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サービス種類" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tG4-tq-0Xo">
+                                <rect key="frame" x="20" y="802" width="67.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Wt-U0-hAl">
+                                <rect key="frame" x="107.5" y="800.5" width="230" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="dEw-s3-qB8"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="17" id="rw5-h1-L0a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GYV-NE-UG9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="0VW-wM-kBw"/>
+                            <constraint firstItem="tG4-tq-0Xo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="58D-HM-jnO"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="GYV-NE-UG9" secondAttribute="bottom" constant="100" id="5ez-vw-G3R"/>
+                            <constraint firstItem="8Wt-U0-hAl" firstAttribute="centerY" secondItem="tG4-tq-0Xo" secondAttribute="centerY" id="GXM-r2-VRg"/>
+                            <constraint firstItem="EaE-oz-438" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="IJf-RB-PVo"/>
+                            <constraint firstItem="tG4-tq-0Xo" firstAttribute="top" secondItem="GYV-NE-UG9" secondAttribute="bottom" constant="40" id="Lkj-38-ZID"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="GYV-NE-UG9" secondAttribute="trailing" constant="30" id="kbm-hX-sI7"/>
+                            <constraint firstItem="GYV-NE-UG9" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="lQK-8b-zlD"/>
+                            <constraint firstItem="EaE-oz-438" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="qwU-mg-K5f"/>
+                            <constraint firstItem="8Wt-U0-hAl" firstAttribute="leading" secondItem="tG4-tq-0Xo" secondAttribute="trailing" constant="20" id="xK8-c2-ufx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="81M-IO-Cqc"/>
+                    <connections>
+                        <outlet property="adressButton" destination="Afm-tS-9NT" id="cYn-Ea-sNZ"/>
+                        <outlet property="adressLabel" destination="Jc1-gk-jxc" id="dRN-Cu-KOy"/>
+                        <outlet property="corporateURLButton" destination="X6J-Xo-9gp" id="BhM-jH-5kN"/>
+                        <outlet property="corporateURLLabel" destination="B1n-RW-iku" id="QoQ-tJ-Oca"/>
+                        <outlet property="officeFaxButton" destination="fto-n6-AlD" id="zlB-8L-Smf"/>
+                        <outlet property="officeFaxLabel" destination="Xfa-d3-88u" id="cqO-Yq-FZj"/>
+                        <outlet property="officeNameButton" destination="ApM-ZR-rhz" id="rdU-J6-av5"/>
+                        <outlet property="officeNameLabel" destination="N0T-wo-GRH" id="PGa-4f-BXe"/>
+                        <outlet property="officeTelButton" destination="jkM-VD-uoU" id="Fne-rF-zJk"/>
+                        <outlet property="officeTelLabel" destination="05s-uW-Rd3" id="4RZ-eO-dxc"/>
+                        <outlet property="officeURLButton" destination="J2b-1g-V4e" id="gEn-mW-5ZG"/>
+                        <outlet property="officeURLLabel" destination="dtx-qr-042" id="iIJ-no-57d"/>
+                        <outlet property="serviceTypeLabel" destination="8Wt-U0-hAl" id="lla-Kg-xh0"/>
+                        <segue destination="gsT-Ia-O4C" kind="presentation" identifier="webViewOfficeURL" destinationCreationSelector="makeWebViewOfficeURLWithCoder:sender:segueIdentifier:" modalPresentationStyle="fullScreen" id="Cev-bj-vx3"/>
+                        <segue destination="gsT-Ia-O4C" kind="presentation" identifier="webViewCorporateURL" destinationCreationSelector="makeWebViewCorparateURLWithCoder:sender:segueIdentifier:" modalPresentationStyle="fullScreen" id="Z5t-Ig-MgT"/>
+                        <segue destination="bpu-3S-vIl" kind="unwind" identifier="backToMap" unwindAction="backToMapViewControllerWithSegue:" id="TPy-Hn-RyT"/>
+                        <segue destination="bpu-3S-vIl" kind="unwind" identifier="backToSearch" unwindAction="backToSearchViewControllerWithSegue:" id="d1R-if-r95"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="bpu-3S-vIl" userLabel="Exit" sceneMemberID="exit"/>
+                <tapGestureRecognizer id="r0d-ZW-aMV">
+                    <connections>
+                        <action selector="callTelephone:" destination="Y6W-OH-hqX" id="u8R-Tn-46x"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="82.366071428571431"/>
+        </scene>
+        <!--WebView-->
+        <scene sceneID="mqp-tW-qZn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="WebView" id="gsT-Ia-O4C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4pT-mu-kf9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1636" y="198"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Afm-tS-9NT">
+            <size key="intrinsicContentSize" width="72" height="31"/>
+        </designable>
+        <designable name="ApM-ZR-rhz">
+            <size key="intrinsicContentSize" width="90" height="31"/>
+        </designable>
+        <designable name="J2b-1g-V4e">
+            <size key="intrinsicContentSize" width="76.5" height="31"/>
+        </designable>
+        <designable name="X6J-Xo-9gp">
+            <size key="intrinsicContentSize" width="76.5" height="31"/>
+        </designable>
+        <designable name="fto-n6-AlD">
+            <size key="intrinsicContentSize" width="90" height="31"/>
+        </designable>
+        <designable name="jkM-VD-uoU">
+            <size key="intrinsicContentSize" width="90" height="31"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="Z5t-Ig-MgT"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="arrowtriangle.backward.circle" catalog="system" width="128" height="121"/>
+        <image name="doc.on.doc" catalog="system" width="116" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="mappin.and.ellipse" catalog="system" width="118" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

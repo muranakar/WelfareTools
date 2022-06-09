@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="WebViewViewController" customModule="TrainingAndEmploymentServices" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ykN-dT-H70">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="zot-9G-lDM"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="戻る" image="arrow.left" catalog="system" id="Qia-mI-kn3">
+                                        <connections>
+                                            <action selector="goBackWebView:" destination="Y6W-OH-hqX" id="O52-JQ-OwG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="進む" image="arrow.right" catalog="system" id="sJC-UA-A37">
+                                        <connections>
+                                            <action selector="goForwardWebView:" destination="Y6W-OH-hqX" id="QNG-OX-gyB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SEm-mh-Rgz">
+                                <rect key="frame" x="0.0" y="94" width="414" height="668"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="P6f-6s-RQQ">
+                                <rect key="frame" x="20" y="822" width="374" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gst-dl-Ldg" customClass="FunctionSelectionItemButton" customModule="TrainingAndEmploymentServices" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="情報に戻る"/>
+                                        <connections>
+                                            <segue destination="kG2-ex-tog" kind="unwind" unwindAction="backToDetailSearchViewControllerWithSegue:" id="Iy4-8Q-GJc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG6-Bi-vtg" customClass="FunctionSelectionItemButton" customModule="TrainingAndEmploymentServices" customModuleProvider="target">
+                                        <rect key="frame" x="197" y="0.0" width="177" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Googleで検索"/>
+                                        <connections>
+                                            <action selector="serchGoogle:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cEq-pE-nmo"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnr-nE-Pyl" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="762" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="fXZ-zS-Hco"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ykN-dT-H70" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="6AA-VF-CtJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="P6f-6s-RQQ" secondAttribute="trailing" constant="20" id="A2u-69-QiK"/>
+                            <constraint firstItem="P6f-6s-RQQ" firstAttribute="top" secondItem="SEm-mh-Rgz" secondAttribute="bottom" constant="60" id="ArV-LO-2jX"/>
+                            <constraint firstItem="wnr-nE-Pyl" firstAttribute="top" secondItem="SEm-mh-Rgz" secondAttribute="bottom" id="FjO-AA-FLd"/>
+                            <constraint firstItem="wnr-nE-Pyl" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="IIr-7G-iFy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="SEm-mh-Rgz" secondAttribute="bottom" constant="100" id="UGo-8i-tUh"/>
+                            <constraint firstItem="SEm-mh-Rgz" firstAttribute="top" secondItem="ykN-dT-H70" secondAttribute="bottom" id="fr8-E8-uCb"/>
+                            <constraint firstItem="SEm-mh-Rgz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="hge-1O-H8k"/>
+                            <constraint firstItem="ykN-dT-H70" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="lF0-rP-kuR"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="P6f-6s-RQQ" secondAttribute="bottom" constant="10" id="lhz-o3-eQQ"/>
+                            <constraint firstItem="ykN-dT-H70" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="mv4-qn-v9Y"/>
+                            <constraint firstItem="P6f-6s-RQQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ndo-Lg-kxf"/>
+                            <constraint firstItem="SEm-mh-Rgz" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="rLa-dt-8IQ"/>
+                            <constraint firstItem="wnr-nE-Pyl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="v6Q-3Y-5Hn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView" destination="wnr-nE-Pyl" id="ShK-rV-uQJ"/>
+                        <outlet property="webView" destination="SEm-mh-Rgz" id="54t-Y2-Tpx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="kG2-ex-tog" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="76.339285714285708"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Gst-dl-Ldg">
+            <size key="intrinsicContentSize" width="95.5" height="31"/>
+        </designable>
+        <designable name="lG6-Bi-vtg">
+            <size key="intrinsicContentSize" width="113.5" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="arrow.right" catalog="system" width="128" height="98"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--設定-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="SettingViewController" customModule="InHomeRehabilitationAndNursing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="サービスの種類を選択してください" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUq-6e-GZK">
+                                <rect key="frame" x="10" y="104" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXb-gY-pQp">
+                                <rect key="frame" x="0.0" y="144.5" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="hmT-kG-JNq"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="b8P-Po-AOq"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="SHS-K1-nIt"/>
+                                </connections>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLb-Vi-LaZ" customClass="FunctionSelectionItemButton" customModule="InHomeRehabilitationAndNursing" customModuleProvider="target">
+                                <rect key="frame" x="132" y="344.5" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="NuH-37-Y4y"/>
+                                    <constraint firstAttribute="height" constant="50" id="lAu-hh-eDn"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="位置情報の設定"/>
+                                <connections>
+                                    <action selector="configureCoreLocation:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="aLd-Tg-lzr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YW0-ke-dZT" customClass="RequestViaTwitterButton" customModule="InHomeRehabilitationAndNursing" customModuleProvider="target">
+                                <rect key="frame" x="30" y="673" width="140" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="FWv-x0-LDa"/>
+                                    <constraint firstAttribute="width" constant="140" id="XBX-LV-PgL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="jumpToTwitter:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pB7-Ag-1ib"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eoJ-n8-iB4" customClass="GADBannerView">
+                                <rect key="frame" x="0.0" y="763" width="414" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="l8G-Ir-VeU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YUq-6e-GZK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="60" id="25k-kL-Eay"/>
+                            <constraint firstItem="qXb-gY-pQp" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Cq4-i8-fIl"/>
+                            <constraint firstItem="hLb-Vi-LaZ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="Hsn-Tt-ntt"/>
+                            <constraint firstItem="qXb-gY-pQp" firstAttribute="top" secondItem="YUq-6e-GZK" secondAttribute="bottom" constant="20" id="KbE-SY-hAH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="YUq-6e-GZK" secondAttribute="trailing" constant="10" id="Kcb-Kf-PRu"/>
+                            <constraint firstItem="eoJ-n8-iB4" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="QmN-Vk-RYi"/>
+                            <constraint firstItem="hLb-Vi-LaZ" firstAttribute="top" secondItem="qXb-gY-pQp" secondAttribute="bottom" constant="50" id="SKv-E2-mbp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="YW0-ke-dZT" secondAttribute="bottom" constant="80" id="ikF-At-GuY"/>
+                            <constraint firstItem="qXb-gY-pQp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="lkx-ce-61y"/>
+                            <constraint firstItem="eoJ-n8-iB4" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="mvu-YO-Nhd"/>
+                            <constraint firstItem="eoJ-n8-iB4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="sWx-ps-gNq"/>
+                            <constraint firstItem="YUq-6e-GZK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="tEt-hU-6gR"/>
+                            <constraint firstItem="YW0-ke-dZT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="wSu-ec-2YI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="設定" image="gearshape" catalog="system" id="q1b-QK-dFN"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bannerView" destination="eoJ-n8-iB4" id="Bsk-KA-wjg"/>
+                        <outlet property="filterServiceTypePickerView" destination="qXb-gY-pQp" id="vja-BQ-9we"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="91.741071428571431"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="YW0-ke-dZT">
+            <size key="intrinsicContentSize" width="130" height="60"/>
+        </designable>
+        <designable name="hLb-Vi-LaZ">
+            <size key="intrinsicContentSize" width="124" height="31"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

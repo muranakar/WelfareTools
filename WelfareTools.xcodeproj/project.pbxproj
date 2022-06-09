@@ -37,6 +37,8 @@
 		B2A945EA282C6D560001B737 /* UseCaseFilterFacilityInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A945E9282C6D560001B737 /* UseCaseFilterFacilityInformation.swift */; };
 		B2B01A442848203D00B820AC /* DetailSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B01A432848203D00B820AC /* DetailSearch.storyboard */; };
 		B2B01A462848204E00B820AC /* DetailSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B01A452848204E00B820AC /* DetailSearchViewController.swift */; };
+		B2B85C172852BCE3001A0EFA /* 170_福祉用具貸与.csv in Resources */ = {isa = PBXBuildFile; fileRef = B2B85C162852BCE3001A0EFA /* 170_福祉用具貸与.csv */; };
+		B2B85C192852BCEA001A0EFA /* 410_特定福祉用具販売.csv in Resources */ = {isa = PBXBuildFile; fileRef = B2B85C182852BCEA001A0EFA /* 410_特定福祉用具販売.csv */; };
 		B2B85EFA282D43400065E12E /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B85EF9282D43400065E12E /* Map.storyboard */; };
 		B2B85EFC282D434B0065E12E /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B85EFB282D434B0065E12E /* Setting.storyboard */; };
 		B2B85EFE282D43580065E12E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B85EFD282D43580065E12E /* MapViewController.swift */; };
@@ -97,6 +99,8 @@
 		B2A945E9282C6D560001B737 /* UseCaseFilterFacilityInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseFilterFacilityInformation.swift; sourceTree = "<group>"; };
 		B2B01A432848203D00B820AC /* DetailSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailSearch.storyboard; sourceTree = "<group>"; };
 		B2B01A452848204E00B820AC /* DetailSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSearchViewController.swift; sourceTree = "<group>"; };
+		B2B85C162852BCE3001A0EFA /* 170_福祉用具貸与.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "170_福祉用具貸与.csv"; sourceTree = "<group>"; };
+		B2B85C182852BCEA001A0EFA /* 410_特定福祉用具販売.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "410_特定福祉用具販売.csv"; sourceTree = "<group>"; };
 		B2B85EF9282D43400065E12E /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		B2B85EFB282D434B0065E12E /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B2B85EFD282D43580065E12E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 		B2981489282DB07000A3D0C3 /* CSV */ = {
 			isa = PBXGroup;
 			children = (
+				B2B85C182852BCEA001A0EFA /* 410_特定福祉用具販売.csv */,
+				B2B85C162852BCE3001A0EFA /* 170_福祉用具貸与.csv */,
 			);
 			path = CSV;
 			sourceTree = "<group>";
@@ -441,6 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2B85C192852BCEA001A0EFA /* 410_特定福祉用具販売.csv in Resources */,
 				B2A945DE282C6B850001B737 /* LaunchScreen.storyboard in Resources */,
 				B2916E8E282EFBDC006134BE /* WebView.storyboard in Resources */,
 				B2C2E8E628411450001A4316 /* Search.storyboard in Resources */,
@@ -449,6 +456,7 @@
 				B2A945DB282C6B850001B737 /* Assets.xcassets in Resources */,
 				B2A945D9282C6B810001B737 /* Main.storyboard in Resources */,
 				B2B85EFC282D434B0065E12E /* Setting.storyboard in Resources */,
+				B2B85C172852BCE3001A0EFA /* 170_福祉用具貸与.csv in Resources */,
 				B2B01A442848203D00B820AC /* DetailSearch.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

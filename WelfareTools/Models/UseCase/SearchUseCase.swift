@@ -33,24 +33,18 @@ struct UseCaseSearch {
 
 enum FilterServiceType: CaseIterable {
     case all
-    case shortStay
-    case shortStayHealthCareFacilityfortheElderly
-    case shortStayLongTermCareMedicalFacilities
-    case shortStayLongTermCareMedicalFacility
+    case welfareEquipmentRental
+    case specifiedWelfareEquipment
 }
 extension FilterServiceType {
     var string: String {
         switch self {
         case .all:
             return "全てのサービス"
-        case .shortStay:
-            return "短期入所生活介護"
-        case .shortStayHealthCareFacilityfortheElderly:
-            return "短期入所療養介護（介護老人保健施設）"
-        case .shortStayLongTermCareMedicalFacilities:
-            return "短期入所療養介護（介護療養型医療施設）"
-        case .shortStayLongTermCareMedicalFacility:
-            return "短期入所療養介護（介護医療院）"
+        case .welfareEquipmentRental:
+            return "福祉用具貸与"
+        case .specifiedWelfareEquipment:
+            return "特定福祉用具販売"
         }
     }
 }

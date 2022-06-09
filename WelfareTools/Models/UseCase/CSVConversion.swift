@@ -31,7 +31,7 @@ struct CsvConversion {
                 return revisonString
             }
             guard array.count == 24 else {
-print( array)
+                print( array)
                 return
             }
             csvLineTwoDimensional.append(revisionArray)
@@ -62,36 +62,26 @@ print( array)
 }
 
 enum ServiceType: CaseIterable {
-    case shortStay
-    case shortStayHealthCareFacilityfortheElderly
-    case shortStayLongTermCareMedicalFacilities
-    case shortStayLongTermCareMedicalFacility
+    case welfareEquipmentRental
+    case specifiedWelfareEquipment
 }
 
 extension ServiceType {
     var stringJapanese: String {
         switch self {
-        case .shortStay:
-            return "短期入所生活介護"
-        case .shortStayHealthCareFacilityfortheElderly:
-            return "短期入所療養介護（介護老人保健施設）"
-        case .shortStayLongTermCareMedicalFacilities:
-            return "短期入所療養介護（介護療養型医療施設）"
-        case .shortStayLongTermCareMedicalFacility:
-            return "短期入所療養介護（介護医療院）"
+        case .welfareEquipmentRental:
+            return "福祉用具貸与"
+        case .specifiedWelfareEquipment:
+            return "特定福祉用具販売"
         }
     }
     
     var fileName: String {
         switch self {
-        case .shortStay:
-            return "210_短期入所生活介護"
-        case .shortStayHealthCareFacilityfortheElderly:
-            return "220_短期入所療養介護（介護老人保健施設）"
-        case .shortStayLongTermCareMedicalFacilities:
-            return "230_短期入所療養介護（介護療養型医療施設）"
-        case .shortStayLongTermCareMedicalFacility:
-            return "551_短期入所療養介護（介護医療院）"
+        case  .welfareEquipmentRental:
+            return "170_福祉用具貸与"
+        case .specifiedWelfareEquipment:
+            return "410_特定福祉用具販売"
         }
     }
 }

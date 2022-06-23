@@ -8,6 +8,8 @@
 	<dict/>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-3713368437594912~1181640958</string>
+	<key>Item 0</key>
+	<string>line</string>
 	<key>LSApplicationQueriesSchemes</key>
 	<array>
 		<string>comgooglemaps</string>

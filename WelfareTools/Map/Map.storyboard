@@ -12,7 +12,7 @@
         <!--地図-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="MapViewController" customModule="SeniorCitizensHome" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="MapViewController" customModule="WelfareTools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="fHf-aS-adD"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-Pq-9NR" customClass="CurrentLocationButton" customModule="SeniorCitizensHome" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xm6-Pq-9NR" customClass="CurrentLocationButton" customModule="WelfareTools" customModuleProvider="target">
                                 <rect key="frame" x="274" y="543" width="120" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gi2-dY-QHc"/>
@@ -95,7 +95,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Iax-wx-Zfe">
                                 <rect key="frame" x="20" y="705" width="374" height="40"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bok-97-xyR" customClass="FunctionSelectionItemButton" customModule="SeniorCitizensHome" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bok-97-xyR" customClass="FunctionSelectionItemButton" customModule="WelfareTools" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="159" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="doc.on.doc" catalog="system" title="コピー"/>
@@ -103,7 +103,7 @@
                                             <action selector="copyFacilityInformation:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8ir-Vc-m24"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y74-Xs-tIz" customClass="FunctionSelectionItemButton" customModule="SeniorCitizensHome" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y74-Xs-tIz" customClass="FunctionSelectionItemButton" customModule="WelfareTools" customModuleProvider="target">
                                         <rect key="frame" x="179" y="0.0" width="195" height="40"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="doc.text" catalog="system" title="詳細情報"/>
@@ -123,7 +123,7 @@
                                     <constraint firstAttribute="height" constant="50" id="YNj-mk-Avq"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjO-eZ-kmf" customClass="PickerViewKeyboard" customModule="SeniorCitizensHome" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjO-eZ-kmf" customClass="PickerViewKeyboard" customModule="WelfareTools" customModuleProvider="target">
                                 <rect key="frame" x="107" y="54" width="200" height="40"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56Z-cI-LC6">

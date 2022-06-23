@@ -43,6 +43,7 @@
 		B2B85EFC282D434B0065E12E /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B85EFB282D434B0065E12E /* Setting.storyboard */; };
 		B2B85EFE282D43580065E12E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B85EFD282D43580065E12E /* MapViewController.swift */; };
 		B2B85F00282D43630065E12E /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B85EFF282D43630065E12E /* SettingViewController.swift */; };
+		B2BEE931286518AB0078D46B /* ReviewRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BEE930286518AB0078D46B /* ReviewRepository.swift */; };
 		B2C2E8E628411450001A4316 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2C2E8E528411450001A4316 /* Search.storyboard */; };
 		B2C2E8E828411466001A4316 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C2E8E728411466001A4316 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -105,6 +106,7 @@
 		B2B85EFB282D434B0065E12E /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		B2B85EFD282D43580065E12E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B2B85EFF282D43630065E12E /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		B2BEE930286518AB0078D46B /* ReviewRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewRepository.swift; sourceTree = "<group>"; };
 		B2C2E8E528411450001A4316 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		B2C2E8E728411466001A4316 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		B5D3136742E1EE69468A2FB7 /* Pods-SeniorDayCareCenter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SeniorDayCareCenter.release.xcconfig"; path = "Target Support Files/Pods-SeniorDayCareCenter/Pods-SeniorDayCareCenter.release.xcconfig"; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				B2A945E7282C6C5A0001B737 /* FacilityInformation.swift */,
 				B2981493282DD87A00A3D0C3 /* PrefectureRepository.swift */,
 				B28EE17C284C0D3300180139 /* FilterServiceTypeRepository.swift */,
+				B2BEE930286518AB0078D46B /* ReviewRepository.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				B2981494282DD87A00A3D0C3 /* PrefectureRepository.swift in Sources */,
 				B298148E282DCAB500A3D0C3 /* DecoderFacliityInformation.swift in Sources */,
 				B2381DF7284433D100A9A9C7 /* GoogleAdID.swift in Sources */,
+				B2BEE931286518AB0078D46B /* ReviewRepository.swift in Sources */,
 				B2B01A462848204E00B820AC /* DetailSearchViewController.swift in Sources */,
 				B2A945D2282C6B810001B737 /* AppDelegate.swift in Sources */,
 				B294DF912833103E00C7C809 /* PasteboardFormatterFacilityInformation.swift in Sources */,
@@ -753,8 +757,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DJ7VR35KC8;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -770,10 +774,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = WelfareTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = WelfareTools;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -787,8 +791,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DJ7VR35KC8;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -804,10 +808,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.1;
+				MARKETING_VERSION = 1.1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = WelfareTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = WelfareTools;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

@@ -137,8 +137,8 @@ class MapViewController: UIViewController {
 
     @IBAction private func searchFacilityInformation(_ sender: Any) {
         let reviewNum = ReviewRepository.processAfterAddReviewNumPulsOneAndSaveReviewNum()
-        if reviewNum == 5 || reviewNum == 20{
-            if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
+        if reviewNum == 5 || reviewNum == 20 || reviewNum == 50 {
+            if let scene = view.window?.windowScene {
                 SKStoreReviewController.requestReview(in: scene)
             }
         }
